@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# If you are using SQLite
+db.sqlite3
+db.sqlite3-journal
+
+# Django migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Local environment
+.env
+*.env
+.env.*
+
+# Static files
+/staticfiles/
+/media/
+/static/
+
+# If you are using Docker:
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# VSCode settings
+.vscode/
+
+# macOS settings
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Testing / Coverage
+.tox/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+coverage/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# IDEs
+.idea/
+*.swp
+*.swo
+
+# Other config files
+*.local
