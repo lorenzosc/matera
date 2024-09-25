@@ -77,8 +77,8 @@ A API estará hosteada em http://localhost:8000/, e suas rotas já poderão ser 
     {
         "value": "loan_value",
         "interest_rate": "loan_interest_rate",
-        "request_date": "2024-05-30T00:00:00Z", // exemplo de data
-        "ip_address": "192.168.0.1", // exemplo de ip_adress
+        "request_date": "2024-05-30T00:00:00Z",
+        "ip_address": "192.168.0.1",
         "bank": "Your Bank",
         "client": "Client Name"
     }
@@ -98,9 +98,9 @@ A API estará hosteada em http://localhost:8000/, e suas rotas já poderão ser 
     Request Body:
     ```json
     {
-        "date": "2024-09-21T00:00:00Z", // exemplo de data
-        "value": 500, // exemplo de valor
-        "loan": "loan_id" // coloque o empréstimo ao qual o pagamento se refere
+        "date": "2024-09-21T00:00:00Z",
+        "value": 500,
+        "loan": "loan_id"
     }
     ```
 - **Obter Pagamentos**:
