@@ -13,6 +13,7 @@ class Loan(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Payment(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     date = models.DateTimeField()
     value = models.FloatField()
     loan = models.ForeignKey(Loan, on_delete=models.CASCADE)
