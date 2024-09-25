@@ -7,7 +7,7 @@ class Loan(models.Model):
     value = models.FloatField()
     interest_rate = models.FloatField()
     ip_address = models.GenericIPAddressField()
-    request_date = models.DateTimeField(auto_now_add=True)
+    request_date = models.DateTimeField()
     bank = models.CharField(max_length=100)
     client = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
