@@ -13,6 +13,7 @@ class LoanViewSet(
     mixins.RetrieveModelMixin,
     mixins.CreateModelMixin
 ):
+    queryset = Loan.objects.all()
     serializer_class = LoanSerializer
     permission_classes = [IsAuthenticated]
 
@@ -58,6 +59,7 @@ class PaymentViewSet(
     mixins.RetrieveModelMixin,
     mixins.CreateModelMixin
 ):
+    queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
     permission_classes = [IsAuthenticated]
 
