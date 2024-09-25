@@ -77,4 +77,9 @@ class PaymentViewSet(
                 """
             )
 
+        if serializer.validated_data.get('date') < loan.request_date:
+            raise PermissionDenied(
+                "You cannot create payments for dates before the loan request date."
+            )
+
         serializer.save(user=self.request.user)
