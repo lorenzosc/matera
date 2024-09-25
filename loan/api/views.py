@@ -34,12 +34,12 @@ class LoanViewSet(
         for payment in payments:
             date_diff = (payment.date - last_day).days
             interest = still_due * np.power(1 + pro_rata_day, date_diff)
-            still_due = round(still_due + interest - payment.value, 2)
+            still_due = round(interest - payment.value, 2)
             last_day = payment.date
 
         if still_due > 0:
             interest = still_due * np.power(1 + pro_rata_day, (timezone.now() - last_day).days)
-            still_due = round(still_due + interest, 2)
+            still_due = round(interest, 2)
 
         loan_data = LoanSerializer(loan).data
         payments_data = PaymentSerializer(payments, many=True).data
