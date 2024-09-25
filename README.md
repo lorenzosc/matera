@@ -4,7 +4,7 @@ Esse é um projeto Django para permitir usuários gerenciarem seus empréstimos 
 
 ## Funcionalidades
 - Autenticação por JWT
-- Empréstimos: criar, listar empréstimos, e verificar informações de um empréstimo (incluindo saldo devedor)
+- Empréstimos: criar, listar empréstimos, e verificar informações de um empréstimo (incluindo saldo devedor com juros compostos pro rata dia)
 - Pagamentos: criar, listar pagamentos, e verificar informações de um pagamento
 - Separação por usuário (um usuário não consegue ver informações de outro, e nem criar pagamentos para empréstimo de outro)
 - Teste cobrindo as funcionalidades mencionadas, e também o cálculo correto do saldo devedor
