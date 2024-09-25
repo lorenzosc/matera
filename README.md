@@ -1,4 +1,4 @@
-### Django REST API para empréstimos e pagamentos
+# Django REST API para empréstimos e pagamentos
 
 Esse é um projeto Django para permitir usuários gerenciarem seus empréstimos e pagamentos. A autenticação no projeto é feita utilizando JWT, e garante que apenas usuários autenticados possam ver os empréstimos e pagamentos, e apenas os seus. Todas as rotas disponíveis na api, entretanto, podem ser vistas pela rota /api/, a única que não requer autenticação.
 
@@ -46,7 +46,7 @@ A API estará hosteada em http://localhost:8000/, e suas rotas já poderão ser 
 
 ## API Endpoints
 
-# 1. Autenticação
+### 1. Autenticação
 
 - **Gere JWT**:  
   `POST /api/token/`
@@ -67,7 +67,7 @@ A API estará hosteada em http://localhost:8000/, e suas rotas já poderão ser 
         "refresh": "sua_token_refresh"
     }
     ```
-# 2. Empréstimos
+### 2. Empréstimos
 - **Criar empréstimos**:
     `POST /api/loans/`
 
@@ -91,7 +91,7 @@ A API estará hosteada em http://localhost:8000/, e suas rotas já poderão ser 
 - **Listar Empréstimos do usuário**:
     `GET /api/loans/`
 
-# 3. Pagamentos
+### 3. Pagamentos
 - **Criar pagamentos**:
     `POST /api/payments/`
 
@@ -136,8 +136,6 @@ python manage.py shell
 E então crie o usuário
 ```python
 from django.contrib.auth.models import User
-
-# Create a user
 user = User.objects.create_user(username='testuser', password='testpassword')
 user.email = 'test@email.com'
 user.save()
